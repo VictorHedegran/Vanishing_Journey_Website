@@ -1,0 +1,42 @@
+body {
+  background-image: url();
+  background-attachment: fixed;
+}
+
+/* Mobile background-image */
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  body {
+    background-image: url(/images/Vanishing_Journey_Background_Mobile.webp);
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) and (orientation: portrait) {
+  body {
+    background-image: url(/images/Vanishing_Journey_Bg_Tablet.webp);
+  }
+}
+
+@media screen and (max-width: 1080px) and (orientation: landscape) {
+  body {
+    background-image: url(/images/Vanishing_Journey_Bg_1366x768.webp);
+  }
+}
+
+@media screen and (min-width: 1080px) and (orientation: landscape) {
+  body {
+    background-image: url(/images/Vanishing_Journey_Bg_1920x1080.webp);
+  }
+}
+
+@media screen and (min-width: 1440px) and (orientation: landscape) {
+  body {
+    background-image: url(/images/Vanishing_Journey_Bg_2560x1440.webp);
+  }
+}
+
+@media screen and (min-width: 2160px) and (orientation: landscape) {
+  body {
+    background-image: url(/images/Vanishing_Journey_Bg_1920x1080.webp);
+  }
+}
