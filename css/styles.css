@@ -1,9 +1,143 @@
+:root {
+  --backdrop-gray: #202225d0;
+  --backdrop-gray-no-opac: #202225;
+}
+
 body {
   background-image: url();
   background-attachment: fixed;
 }
 
-/* Mobile background-image */
+header {
+  background-color: var(--backdrop-gray);
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  top: -50vh;
+  z-index: 10;
+  transition-property: all;
+  transition-duration: 1s;
+  font-family: "Playfair Display SC", Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.7rem 0;
+  text-align: center;
+  color: lightgray;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  background-color: var(--backdrop-gray-no-opac);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100vw;
+  height: 50vh;
+  font-size: 1.6rem;
+}
+
+.menu a {
+  color: lightgray;
+  font-size: 2rem;
+}
+
+#navButton {
+  background-color: rgba(169, 169, 169, 0.504);
+  width: 100vw;
+  height: 5vh;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main {
+  position: relative;
+  top: 20vh;
+}
+@media screen and (min-width: 768px) {
+  header {
+    background-color: var(--backdrop-gray);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition-property: all;
+    transition-duration: 1s;
+    font-family: "Playfair Display SC", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+    width: 195vw;
+  }
+
+  h1 {
+    width: 95vw;
+    margin: 0;
+    padding: 0.7rem 0;
+    padding-top: 7vh;
+    text-align: center;
+    color: lightgray;
+    font-size: 3rem;
+  }
+
+  nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    background-color: var(--backdrop-gray-no-opac);
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 95vw;
+    height: 20vh;
+    font-size: 1.6rem;
+  }
+
+  .menu a {
+    color: lightgray;
+    font-size: 2rem;
+  }
+
+  #navButton {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 169, 169, 0.504);
+    width: 5vw;
+    height: 20vh;
+    text-align: center;
+  }
+
+  main {
+    position: relative;
+    top: 20vh;
+  }
+}
+
+/* Mobile */
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
   body {
@@ -11,32 +145,36 @@ body {
   }
 }
 
+/* Tablet */
+
 @media screen and (max-width: 1000px) and (min-width: 500px) and (orientation: portrait) {
   body {
     background-image: url(/images/Vanishing_Journey_Bg_Tablet.webp);
   }
 }
 
-@media screen and (max-width: 1080px) and (orientation: landscape) {
+/* Computer */
+
+@media screen and (max-width: 1365px) and (orientation: landscape) {
   body {
     background-image: url(/images/Vanishing_Journey_Bg_1366x768.webp);
   }
 }
 
-@media screen and (min-width: 1080px) and (orientation: landscape) {
+@media screen and (min-width: 1366px) and (orientation: landscape) {
   body {
     background-image: url(/images/Vanishing_Journey_Bg_1920x1080.webp);
   }
 }
 
-@media screen and (min-width: 1440px) and (orientation: landscape) {
+@media screen and (min-width: 1920px) and (orientation: landscape) {
   body {
     background-image: url(/images/Vanishing_Journey_Bg_2560x1440.webp);
   }
 }
 
-@media screen and (min-width: 2160px) and (orientation: landscape) {
+@media screen and (min-width: 2560px) and (orientation: landscape) {
   body {
-    background-image: url(/images/Vanishing_Journey_Bg_1920x1080.webp);
+    background-image: url(/images/Vanishing_Journey_Bg_3840x2160.webp);
   }
 }
