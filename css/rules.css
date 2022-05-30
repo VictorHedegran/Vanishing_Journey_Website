@@ -1,0 +1,7 @@
+:root {
+  --lumi-fav-color: #0bbfdd;
+}
+
+#navRules {
+  color: var(--lumi-fav-color);
+}
