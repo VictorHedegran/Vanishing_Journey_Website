@@ -24,13 +24,12 @@
       <nav>
         <span id="navButton" class="material-icons"> menu </span>
         <div class="menu">
+          <a href="">Owner and Admins</a>
           <a href="https://discord.gg/432XJse58U">Discord link</a>
           <a href="">Rules</a>
-          <a href="">Owner and Admins</a>
         </div>
       </nav>
     </header>
-
     <main>
       <h2>Info</h2>
       <h3>Welcome to Vanishing Journey's Official Discord server.</h3>
@@ -123,35 +122,6 @@
         </li>
       </ol>
     </main>
-    <script>
-      const isTabletOrMobie = window.matchMedia("(max-width: 768px)");
-      const navButton = document.getElementById("navButton");
-      const header = document.getElementById("header");
-      let navOn = false;
-      const navBarToggle = () => {
-        if (isTabletOrMobie.matches) {
-          if (!navOn) {
-            navButton.innerHTML = "close";
-            header.style.top = "0";
-            navOn = true;
-          } else {
-            navButton.innerHTML = "menu";
-            header.style.top = "-50vh";
-            navOn = false;
-          }
-        } else {
-          if (!navOn) {
-            navButton.innerHTML = "close";
-            header.style.left = "-90vw";
-            navOn = true;
-          } else {
-            navButton.innerHTML = "menu";
-            header.style.left = "0";
-            navOn = false;
-          }
-        }
-      };
-      navButton.addEventListener("click", navBarToggle);
-    </script>
+    <script src="/script/script.js"></script>
   </body>
 </html>

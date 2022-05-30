@@ -8,6 +8,8 @@ body {
   background-attachment: fixed;
 }
 
+/* header */
+
 header {
   background-color: var(--backdrop-gray);
   display: flex;
@@ -67,6 +69,7 @@ main {
   position: relative;
   top: 20vh;
 }
+
 @media screen and (min-width: 768px) {
   header {
     background-color: var(--backdrop-gray);
@@ -137,7 +140,7 @@ main {
   }
 }
 
-/* Mobile */
+/* Mobile background */
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
   body {
@@ -145,7 +148,7 @@ main {
   }
 }
 
-/* Tablet */
+/* Tablet background */
 
 @media screen and (max-width: 1000px) and (min-width: 500px) and (orientation: portrait) {
   body {
@@ -153,7 +156,7 @@ main {
   }
 }
 
-/* Computer */
+/* Computer background */
 
 @media screen and (max-width: 1365px) and (orientation: landscape) {
   body {
