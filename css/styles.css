@@ -28,7 +28,9 @@ h1 {
   margin: 0;
   padding: 0.7rem 0;
   text-align: center;
+
   color: lightgray;
+  height: 11vh;
 }
 
 nav {
@@ -43,7 +45,7 @@ nav {
   background-color: var(--backdrop-gray-no-opac);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   align-content: center;
   align-items: center;
   justify-content: space-between;
@@ -70,6 +72,8 @@ main {
   position: relative;
   top: 20vh;
 }
+
+/* header pc */
 
 @media screen and (min-width: 768px) {
   header {
@@ -109,7 +113,7 @@ main {
     background-color: var(--backdrop-gray-no-opac);
     display: flex;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     align-content: center;
     align-items: center;
     justify-content: space-around;
